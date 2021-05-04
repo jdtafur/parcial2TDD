@@ -3,5 +3,6 @@
   &lt;Or&gt;&#xD;
     &lt;ProjectFile&gt;11AEA860-0623-4F52-968A-641A6210605F/f:Simple.Test.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;11AEA860-0623-4F52-968A-641A6210605F/f:Compuesto.Test.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;2BFE76E0-DDD8-4372-9E9F-2E878336B662/f:RegistrarEntradaDeProductoInMemoryTest.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

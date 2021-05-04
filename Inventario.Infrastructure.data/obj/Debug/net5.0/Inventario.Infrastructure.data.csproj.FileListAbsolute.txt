@@ -1,0 +1,15 @@
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\bin\Debug\net5.0\Inventario.Infrastructure.data.deps.json
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\bin\Debug\net5.0\Inventario.Infrastructure.data.dll
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\bin\Debug\net5.0\ref\Inventario.Infrastructure.data.dll
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\bin\Debug\net5.0\Inventario.Infrastructure.data.pdb
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\bin\Debug\net5.0\Inventario.Core.Domain.dll
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\bin\Debug\net5.0\Inventario.Core.Domain.pdb
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\obj\Debug\net5.0\Inventario.Infrastructure.data.csprojAssemblyReference.cache
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\obj\Debug\net5.0\Inventario.Infrastructure.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\obj\Debug\net5.0\Inventario.Infrastructure.data.AssemblyInfoInputs.cache
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\obj\Debug\net5.0\Inventario.Infrastructure.data.AssemblyInfo.cs
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\obj\Debug\net5.0\Inventario.Infrastructure.data.csproj.CoreCompileInputs.cache
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\obj\Debug\net5.0\Inventario.Infrastructure.data.csproj.CopyComplete
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\obj\Debug\net5.0\Inventario.Infrastructure.data.dll
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\obj\Debug\net5.0\ref\Inventario.Infrastructure.data.dll
+C:\Users\juand\RiderProjects\Inventario.Core.Domain\Inventario.Infrastructure.data\obj\Debug\net5.0\Inventario.Infrastructure.data.pdb

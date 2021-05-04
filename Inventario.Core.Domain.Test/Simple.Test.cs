@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using NUnit.Framework;
 
 namespace Inventario.Core.Domain.Test
@@ -29,14 +29,13 @@ namespace Inventario.Core.Domain.Test
         [Test]
         public void RegisterProductSimpleFailTest()
         {
+            
             //Preparar
-            var salchicha = new ProductoSimple("10001", "salchicha", 1000, 1000, "ingrediente");
+            var response = "correcto";
+            var salchicha = new ProductoSimple("salchicha", 1000, 1000);
             
-            //Acción
-            var resultado = salchicha.Registro(0);
-            
-            //Verificación
-            Assert.AreEqual("la cantidad a registrar debe ser mayor a 0 y usted intentó registrar 0 unidades", resultado);
+            //accion y Verificación
+            Assert.Throws<Exception>(()=>salchicha.Registrar(0)); 
         }
         
         /*
@@ -59,13 +58,13 @@ namespace Inventario.Core.Domain.Test
         public void RegisterProductSimpleSuccesTest()
         {
             //Preparar
-            var salchicha = new ProductoSimple("10001", "salchicha", 1000, 1000, "ingrediente");
+            var salchicha = new ProductoSimple("salchicha", 1000, 1000);
             
             //Acción
-            var resultado = salchicha.Registro(10);
+            salchicha.Registrar(10);
             
             //Verificación
-            Assert.AreEqual("Producto agregado, ahora hay 10 unidad(es) del producto salchicha en inventario", resultado);
+            Assert.AreEqual(10, salchicha.Cantidad);
         }
         
         /*
@@ -88,14 +87,14 @@ namespace Inventario.Core.Domain.Test
         [Test]
         public void ExtractCeroProductSimpleFailTest()
         {
-            var salchicha = new ProductoSimple("10001", "salchicha", 1000, 1000, "ingrediente");
-            salchicha.Registro(10);
+            //preparar
+            var response = "correcto";
+            var salchicha = new ProductoSimple( "salchicha", 1000, 1000);
+            salchicha.Registrar(10);
             
-            var resultado = salchicha.Retiro(0);
-            
-            //Verificación
-            Assert.AreEqual("la cantidad a retirar debe ser mayor a 0 y usted intentó retirar 0 unidades", resultado);
-        }
+            //accion y Verificación
+            Assert.Throws<Exception>(()=>salchicha.Retirar(0));
+       }
         
         /*
            Escenario: Retirar cantidad mayor a la cantidad en inventario
@@ -114,13 +113,13 @@ namespace Inventario.Core.Domain.Test
         [Test]
         public void ExtractBigProductSimpleFailTest()
         {
-            var salchicha = new ProductoSimple("10001", "salchicha", 1000, 1000, "ingrediente");
-            salchicha.Registro(10);
-            
-            var resultado = salchicha.Retiro(15);
-            
-            //Verificación
-            Assert.AreEqual("lo sentimos, solo hay 10 unidad(es) disponible(s) en inventario", resultado);
+            //preparar
+            var response = "correcto";
+            var salchicha = new ProductoSimple( "salchicha", 1000, 1000);
+            salchicha.Registrar(10);
+
+            //Accion y Verificación
+            Assert.Throws<Exception>(()=>salchicha.Retirar(15));
         }
         
         /*
@@ -144,13 +143,15 @@ namespace Inventario.Core.Domain.Test
         public void ExtractProductSimpleSuccesTest()
         {
      
-            var salchicha = new ProductoSimple("10001", "salchicha", 1000, 1000, "ingrediente");
-            salchicha.Registro(20);
+            //preparar
+            var salchicha = new ProductoSimple( "salchicha", 1000, 1000);
+            salchicha.Registrar(20);
             
-            var resultado = salchicha.Retiro(5);
+            //accion
+            salchicha.Retirar(5);
             
             //Verificación
-            Assert.AreEqual("Cantidad de producto actualizado, ahora hay 15 unidades del producto salchicha en inventario", resultado);
+            Assert.AreEqual(15, salchicha.Cantidad);
         }
         
     }
